@@ -1,0 +1,120 @@
+
+:root {
+  --clr-white: 255, 255, 255;
+  --clr-black: 0, 0, 0;
+  --clr-grey: 129, 132, 152;
+  --clr-light-grey: 167, 171, 174;
+  --clr-green-cyan: 69, 140, 126;
+
+
+
+  --ff-sans: 'Barlow', sans-serif;
+  --ff-serif: 'Fraunces', serif;
+
+  --fs-regular: 1rem;
+  --fs-secondary: 2rem;
+  --fs-primary: 4rem;
+  --fs-major: 6rem;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-size: 18px;
+  font-family: var(--ff-sans);
+}
+
+a { color: inherit; }
+
+.container {
+  width: min(var(--max-width, 1100px), 100% - 2rem);
+  margin-inline: auto;
+}
+
+.flow * + * { margin-top: var(--margin-top, 1rem); }
+
+.text-center { text-align: center; }
+
+.flex { display: flex; }
+.justify-between { justify-content: space-between; }
+.align-center { align-items: center; }
+.gap { gap: var(--gap, 2rem); }
+
+.heading-major {
+  font-size: var(--fs-major);
+  font-weight: var(--fw-bolder);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  letter-spacing: var(--fs-regular);
+}
+
+.heading-primary {
+  font-size: var(--fs-primary);
+  font-weight: var(--fw-bolder);
+  color: rgb(var(--clr-black));
+}
+
+.heading-secondary {
+  font-size: var(--fs-secondary);
+  font-weight: var(--fw-bolder);
+  color: rgb(var(--clr-black));
+}
+
+.text {
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-regular);
+  color: rgb(var(--clr-grey));
+  max-width: var(--max-width, 300px);
+}
+
+.link {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-bold);
+}
+
+.btn-primary {
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  background-color: rgb(var(--clr-white));
+  border: none;
+  border-radius: 100vh;
+  padding: 1rem 1.5rem;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-regular);
+}
+
+/* components */
+
+/* header */
+.header {
+  background-color: hsl(167, 40%, 24%);
+  color: rgb(var(--clr-white));
+  padding-block: 1rem;
+}
+
+.header .container { --max-width: 1400px; }
