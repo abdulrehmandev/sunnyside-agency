@@ -1,4 +1,8 @@
 
+/* 
+  Variables
+*/
+
 :root {
   --clr-white: 255, 255, 255;
   --clr-black: 0, 0, 0;
@@ -6,21 +10,31 @@
   --clr-light-grey: 167, 171, 174;
   --clr-green-cyan: 69, 140, 126;
 
-
+  --clr-dark-green: 44, 117, 102;
+  --clr-light-green: 129, 215, 198;
 
   --ff-sans: 'Barlow', sans-serif;
   --ff-serif: 'Fraunces', serif;
 
   --fs-regular: 1rem;
   --fs-secondary: 2rem;
-  --fs-primary: 4rem;
-  --fs-major: 6rem;
+  --fs-primary: 2.8rem;
+  --fs-major: 3.2rem;
 
   --fw-regular: 500;
   --fw-bold: 700;
   --fw-bolder: 900;
 
 }
+
+/* 
+  Reset
+*/
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+* { scroll-behavior: smooth; }
 
 body,
 h1,
@@ -31,13 +45,28 @@ p {
   padding: 0;
 }
 
-
 body {
+  min-height: 100vh;
+
   font-size: 18px;
   font-family: var(--ff-sans);
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 a { color: inherit; }
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+/* 
+  Utility Classes
+*/
 
 .container {
   width: min(var(--max-width, 1100px), 100% - 2rem);
@@ -46,17 +75,23 @@ a { color: inherit; }
 
 .flow * + * { margin-top: var(--margin-top, 1rem); }
 
+.p-block { padding-block: var(--padding-block, 5rem); }
+
 .text-center { text-align: center; }
+
+.mx-auto { margin-inline: auto; }
 
 .flex { display: flex; }
 .justify-between { justify-content: space-between; }
 .align-center { align-items: center; }
 .gap { gap: var(--gap, 2rem); }
+.flex-column { flex-direction: column; }
 
 .heading-major {
+  font-family: var(--ff-serif);
   font-size: var(--fs-major);
   font-weight: var(--fw-bolder);
-  color: var(--clr-white);
+  color: rgb(var(--clr-white));
   text-transform: uppercase;
   letter-spacing: var(--fs-regular);
 }
@@ -88,6 +123,7 @@ a { color: inherit; }
 
 .btn-primary {
   font-family: var(--ff-serif);
+  font-size: var(--fs-regular);
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   background-color: rgb(var(--clr-white));
@@ -108,13 +144,35 @@ a { color: inherit; }
   font-weight: var(--fw-regular);
 }
 
-/* components */
+/* 
+  Components
+*/
 
 /* header */
 .header {
-  background-color: hsl(167, 40%, 24%);
+  /* background-color: hsl(167, 40%, 24%); */
   color: rgb(var(--clr-white));
   padding-block: 1rem;
 }
 
 .header .container { --max-width: 1400px; }
+
+/* hero */
+body {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(./assets/images/image-header.jpg);
+  background-size: cover;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero .flow { --margin-top: 8rem; }
+
+/* footer */
+.footer {
+  color: rgb(var(--clr-dark-green));
+  background-color: rgb(var(--clr-light-green));
+}
