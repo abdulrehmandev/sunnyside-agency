@@ -18,10 +18,10 @@
 			<div class="container">
 				<div class="header-wrapper flex justify-between align-center">
 					<a href="#">
-						<img src="./assets/logo.svg" alt="" class="header-brand" />
+						<img src="./assets/logo.svg" alt="" class="header-brand p-1" />
 					</a>
 					<div class="primary-navigaiton flex align-center gap">
-						<ul class="header-nav nav flex gap">
+						<ul class="header-nav text-center nav flex gap">
 							<li class="nav-item"><a href="#" class="nav-link">About</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link">Services</a>
@@ -32,6 +32,7 @@
 						</ul>
 						<button class="btn-primary">Contact</button>
 					</div>
+					<button class="header-toggle" id="headerToggle"></button>
 				</div>
 			</div>
 		</header>
@@ -50,9 +51,100 @@
 			</div>
 		</div>
 
+		<!-- Sales Points -->
+		<div class="sales-points">
+			<div class="points">
+				<div class="point-body p-2 flow-2">
+					<h1 class="heading-primary">Transform your brand</h1>
+					<p class="text mb-2">
+						We are a full-service creative agency specializing in helping brands
+						grow fast. Engage your clients through compelling visuals that do
+						most of the marketing for you.
+					</p>
+					<a class="link" href="#">Learn more</a>
+				</div>
+				<img src="./assets/images/image-transform.jpg" alt="" class="" />
+				<img
+					src="./assets/images/image-stand-out.jpg"
+					alt=""
+					class="standout-img"
+				/>
+				<div class="point-body p-2 flow-2">
+					<h1 class="heading-primary">Stand out to the right audience</h1>
+					<p class="text mb-2">
+						Using a collaborative formula of designers, researchers,
+						photographers, videographers, and copywriters, we’ll build and
+						extend your brand in digital places.
+					</p>
+					<a class="link" href="#">Learn more</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Testimonials -->
+		<div class="client-testimonials p-block">
+			<div class="container">
+				<h2 class="heading-secondary text-center uppercase tracing mb-3">
+					Client Testimonials
+				</h2>
+				<div
+					class="client-testimonials-wrapper flex flex-wrap justify-center gap"
+				>
+					<div
+						class="testimonial flex flex-column align-center justify-between gap p-1"
+					>
+						<img class="border-rounded" src="./assets/image-emily.jpg" alt="" />
+						<p class="testimonial-text text text-center">
+							We put our trust in Sunnyside and they delivered, making sure our
+							needs were met and deadlines were always hit.
+						</p>
+						<div class="client-info text-center">
+							<h3 class="heading">Emily R.</h3>
+							<p class="text-small">Marketing Manager</p>
+						</div>
+					</div>
+					<div
+						class="testimonial flex flex-column align-center justify-between gap p-1"
+					>
+						<img
+							class="border-rounded"
+							src="./assets/image-thomas.jpg"
+							alt=""
+						/>
+						<p class="testimonial-text text text-center">
+							Marketing Director Sunnyside’s enthusiasm coupled with their keen
+							interest in our brand’s success made it a satisfying and enjoyable
+							experience.
+						</p>
+						<div class="client-info text-center">
+							<h3 class="heading">Thomas S.</h3>
+							<p class="text-small">Chief Operating Officer</p>
+						</div>
+					</div>
+					<div
+						class="testimonial flex flex-column align-center justify-between gap p-1"
+					>
+						<img
+							class="border-rounded"
+							src="./assets/image-jennie.jpg"
+							alt=""
+						/>
+						<p class="testimonial-text text text-center">
+							Incredible end result! Our sales increased over 400% when we
+							worked with Sunnyside. Highly recommended!
+						</p>
+						<div class="client-info text-center">
+							<h3 class="heading">Jennie F.</h3>
+							<p class="text-small">Business Owner</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Image-gallery -->
 		<div class="gallery">
-			<div class="gallery-wrapper flex">
+			<div class="gallery-wrapper w-full">
 				<img src="./assets/images/image-gallery-cone.jpg" alt="" />
 				<img src="./assets/images/image-gallery-milkbottles.jpg" alt="" />
 				<img src="./assets/images/image-gallery-orange.jpg" alt="" />
